@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taschenrechner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontface.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="resultDiv"></div>
+
+    <table>
+        <tr>
+            <td onclick="root('Math.sqrt')" class="newColor">&#8730;</td>
+            <td onclick="squared(' **2 ')" class="newColor">²</td>
+            <td onclick="del()"class="newColor">C</td>
+            <td onclick="delLast()" class="newColor">CE</td>
+        </tr>
+        <tr>
+            <td onclick="appendOperation(7)" class="border-radius">7</td>
+            <td onclick="appendOperation(8)" class="border-radius">8</td>
+            <td onclick="appendOperation(9)" class="border-radius">9</td>
+            <td onclick="appendOperation(' / ')" class="newColor">/</td>
+        </tr>
+        <tr>
+            <td onclick="appendOperation(4)" class="border-radius">4</td>
+            <td onclick="appendOperation(5)" class="border-radius">5</td>
+            <td onclick="appendOperation(6)" class="border-radius">6</td>
+            <td onclick="appendOperation(' * ')" class="newColor">x</td>
+        </tr>
+        <tr>
+            <td onclick="appendOperation(1)" class="border-radius">1</td>
+            <td onclick="appendOperation(2)" class="border-radius">2</td>
+            <td onclick="appendOperation(3)" class="border-radius">3</td>
+            <td onclick="appendOperation(' + ')" class="newColor">+</td>
+        </tr>
+        <tr>
+            <td onclick="appendOperation(0)" class="border-radius">0</td>
+            <td onclick="appendOperation('.')" class="newColor">,</td>
+            <td onclick="calc()" id="result" class="newColor border-radius">=</td>
+            <td onclick="appendOperation(' - ')" class="newColor">-</td>
+        </tr>
+    </table>
+</body>
+
+</html>
